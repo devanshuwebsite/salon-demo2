@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details | Aura Luxury Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header-solid">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Aura Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/120x40/111/d4af37?text=AURA';">
+            </a>
+            <a href="index.html#services" class="btn btn-outline btn-sm">← Back to Services</a>
+        </div>
+    </header>
+
+    <!-- Details Hero -->
+    <section class="details-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="gold-text" id="svc-subtitle">Exclusive Treatment</p>
+            <h1 id="svc-title">Service Details</h1>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container grid-2">
+            <div class="details-img-container">
+                <img id="svc-img" src="" alt="Service Featured Image">
+            </div>
+            <div class="details-info">
+                <h2 id="svc-heading">Service Name</h2>
+                <p id="svc-desc" class="details-desc">Detailed treatment description loading...</p>
+                
+                <h3>Key Highlights</h3>
+                <ul id="svc-features" class="features-list">
+                    <!-- Dynamic Features Added via JS -->
+                </ul>
+
+                <div class="price-box">
+                    <span>Investment</span>
+                    <h2 id="svc-price" class="gold-text">₹0</h2>
+                </div>
+
+                <div class="action-btns">
+                    <a href="https://wa.me/919610025124?text=Hello%20I%20want%20to%20book%20a%20luxury%20salon%20appointment" target="_blank" class="btn btn-gold">Book on WhatsApp</a>
+                    <a href="index.html#services" class="btn btn-outline">Explore All Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Gallery -->
+    <section class="section bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">Visual Showcase</h3>
+                <h2>Service Gallery</h2>
+            </div>
+            <div class="grid-3" id="svc-gallery">
+                <!-- 3 Dynamic Images Added via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="section cta-section">
+        <div class="container text-center">
+            <h2>Ready to Elevate Your Look?</h2>
+            <p>Schedule your personalized luxury session with our master artists today.</p>
+            <a href="https://wa.me/919610025124?text=Hello%20I%20want%20to%20book%20a%20luxury%20salon%20appointment" target="_blank" class="btn btn-gold">Book Appointment Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Aura Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/120x40/111/d4af37?text=AURA';">
+            </div>
+            <p>Phone: 12345678910 | Email: ddimarketing1234@gmail.com</p>
+            <p>&copy; 2026 Aura Luxury Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+       <script>
+        const serviceData = {
+            haircut: {
+                title: "Premium Haircut & Styling",
+                subtitle: "Precision Cutting",
+                heading: "Tailored Luxury Cuts",
+                desc: "An individualized hair styling experience including a personal texture consultation, scalp massaged wash, hair cut designed around face geometry, and signature blow-dry styling.",
+                price: "₹999",
+                img: "images/hl.jpeg",
+                features: ["Personalized Consultation", "Scalp Massaged Wash", "Signature Blow-Dry Styling", "Premium Finishing Serum"],
+                gallery: [
+                    "images/Ai.jpeg",
+                    "images/Sg.jpeg",
+                    "images/Ph.jpeg"
+                ]
+            },
+            spa: {
+                title: "Luxury Hair Spa Therapy",
+                subtitle: "Deep Rejuvenation",
+                heading: "Nourishing Hair & Scalp Treatment",
+                desc: "Reinvigorate tired locks with our intense conditioning treatment designed to eliminate dryness, strengthen root health, repair damage, and impart enduring radiant gloss.",
+                price: "₹1499",
+                img: "images/Lh.jpeg",
+                features: ["Scalp Exfoliation", "Argan & Keratin Infusion", "Deep Steam Massage", "Anti-Frizz Seal Therapy"],
+                gallery: [
+                    "images/Lh1.jpeg",
+                    "images/Lh.jpeg",
+                    "images/Lh3.jpeg"
+                ]
+            },
+            colour: {
+                title: "Bespoke Hair Colouring",
+                subtitle: "Vibrant Artistry",
+                heading: "Ammonia-Free Custom Tones",
+                desc: "Elevate your style with world-class color transformation services using ultra-gentle, high-shine formula dyes that preserve hair health while delivering deep vibrant tones.",
+                price: "₹2499",
+                img: "images/Ph.jpeg",
+                features: ["Ammonia-Free Dyes", "Balayage & Ombre Specialists", "Bond-Building Treatments", "Color Lock Sealing Wash"],
+                gallery: [
+                    "images/hl.jpeg",
+                    "images/Ph.jpeg",
+                    "images/B1.jpeg"
+                ]
+            },
+            bridal: {
+                title: "Luxury Bridal Makeover",
+                subtitle: "Royal Transformation",
+                heading: "HD Airbrush Bridal Aesthetics",
+                desc: "An exclusive complete bridal glam service covering long-wear high-definition airbrush makeup, saree/dupatta draping, bespoke hairstyling, and eyelash extensions.",
+                price: "₹7999",
+                img: "images/Bm.jpeg",
+                features: ["HD Airbrush Tech", "Includes Hair Design & Draping", "Luxury Mink Lashes Included", "Touch-Up Kit Provided"],
+                gallery: [
+                    "images/Bm.jpeg",
+                    "images/Ph.jpeg",
+                    "images/T1.jpeg"
+                ]
+            },
+            facial: {
+                title: "24K Gold & Caviar Facial",
+                subtitle: "Ultimate Radiance",
+                heading: "Anti-Aging Skincare Elixir",
+                desc: "Turn back time with a deeply detoxifying facial incorporating ultrasonic skin exfoliation, pure 24k gold leaf application, and cellular hydration serums.",
+                price: "₹1299",
+                img: "images/F.jpeg",
+                features: ["Ultrasonic Pore Cleansing", "24K Gold Infusion Mask", "Lymphatic Drainage Massage", "Hydra-Glow Finish"],
+                gallery: [
+                    "images/F.jpeg",
+                    "images/F2.jpeg",
+                    "images/Lh.jpeg"
+                ]
+            },
+            nailart: {
+                title: "Premium Nail Extensions & Art",
+                subtitle: "Artistic Elegance",
+                heading: "Custom Nail Sculpting",
+                desc: "Transform your hands into statement pieces with precision gel or acrylic extensions finished with hand-painted nail art, chromes, or Swarovski stones.",
+                price: "₹1799",
+                img: "images/Na.jpeg",
+                features: ["Non-Chip Gel Polish", "Acrylic/Gel Extensions", "Hand-Painted Custom Art", "Cuticle Oil Care"],
+                gallery: [
+                    "images/Na.jpeg",
+                    "images/N2.jpeg",
+                    "images/N3.jpeg"
+                ]
+            }
+        };
+
+        const params = new URLSearchParams(window.location.search);
+        const serviceKey = params.get('service') || 'haircut';
+        const data = serviceData[serviceKey] || serviceData['haircut'];
+
+        // Populate elements
+        document.getElementById('svc-title').textContent = data.title;
+        document.getElementById('svc-subtitle').textContent = data.subtitle;
+        document.getElementById('svc-heading').textContent = data.heading;
+        document.getElementById('svc-desc').textContent = data.desc;
+        document.getElementById('svc-price').textContent = data.price;
+        document.getElementById('svc-img').src = data.img;
+
+        // Auto-Generate Dynamic WhatsApp Booking Link with full Package Info
+        const phone = "919610025124";
+        const message = `Hello, I want to book an appointment.%0A%0A*Selected Package:* ${encodeURIComponent(data.title)}%0A*Price:* ${encodeURIComponent(data.price)}`;
+        const waLink = `https://wa.me/${phone}?text=${message}`;
+
+        // Set WhatsApp links for buttons
+        const waButtons = document.querySelectorAll('a[href*="wa.me"]');
+        waButtons.forEach(btn => btn.href = waLink);
+
+        // Features List
+        const list = document.getElementById('svc-features');
+        list.innerHTML = '';
+        data.features.forEach(f => {
+            const li = document.createElement('li');
+            li.textContent = '✓ ' + f;
+            list.appendChild(li);
+        });
+
+        // Gallery Grid
+        const gallery = document.getElementById('svc-gallery');
+        gallery.innerHTML = '';
+        data.gallery.forEach(imgUrl => {
+            const div = document.createElement('div');
+            div.className = 'card gallery-card';
+            div.innerHTML = `<img src="${imgUrl}" alt="Gallery Image">`;
+            gallery.appendChild(div);
+        });
+    </script>
+
+        const params = new URLSearchParams(window.location.search);
+        const serviceKey = params.get('service') || 'haircut';
+        const data = serviceData[serviceKey] || serviceData['haircut'];
+
+        // Populate elements
+        document.getElementById('svc-title').textContent = data.title;
+        document.getElementById('svc-subtitle').textContent = data.subtitle;
+        document.getElementById('svc-heading').textContent = data.heading;
+        document.getElementById('svc-desc').textContent = data.desc;
+        document.getElementById('svc-price').textContent = data.price;
+        document.getElementById('svc-img').src = data.img;
+
+        // Features List
+        const list = document.getElementById('svc-features');
+        list.innerHTML = '';
+        data.features.forEach(f => {
+            const li = document.createElement('li');
+            li.textContent = '✓ ' + f;
+            list.appendChild(li);
+        });
+
+        // Gallery Grid
+        const gallery = document.getElementById('svc-gallery');
+        gallery.innerHTML = '';
+        data.gallery.forEach(imgUrl => {
+            const div = document.createElement('div');
+            div.className = 'card gallery-card';
+            div.innerHTML = `<img src="${imgUrl}" alt="Gallery Image">`;
+            gallery.appendChild(div);
+        });
+    </script>
+</body>
+</html>

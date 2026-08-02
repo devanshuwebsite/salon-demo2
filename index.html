@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura | Luxury Beauty & Hair Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Aura Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/120x40/111/d4af37?text=AURA';">
+            </a>
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#team">Team</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Luxury Beauty & Hair Studio</h1>
+            <p>Experience world-class hair styling, skincare, and bridal transformations tailored exclusively for you.</p>
+            <div class="hero-btns">
+                <a href="https://wa.me/919610025124?text=Hello%20I%20want%20to%20book%20a%20luxury%20salon%20appointment" target="_blank" class="btn btn-gold">Book Appointment</a>
+                <a href="#services" class="btn btn-outline">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container grid-2">
+            <div class="about-text">
+                <h3 class="sub-heading">About Our Studio</h3>
+                <h2>Redefining Opulence in Personal Grooming</h2>
+                <p>Welcome to Aura, where world-class talent meets bespoke aesthetic care. Our studio is meticulously designed to offer a serene escape while delivering cutting-edge styling, rejuvenating therapies, and radiant beauty solutions.</p>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <span class="gold-text">10+</span>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="gold-text">15k+</span>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="images/Ai.jpeg" alt="Salon Interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">The Aura Difference</h3>
+                <h2>Why Choose Us</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card feature-card">
+                    <h3>Expert Stylists</h3>
+                    <p>Internationally trained master stylists dedicated to perfecting your personalized look.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Premium Products</h3>
+                    <p>We use exclusively high-end, organic, and luxury cosmetics for skin and hair health.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Hygienic Environment</h3>
+                    <p>Hospital-grade sterilization standards ensuring absolute safety and comfort.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Luxury Experience</h3>
+                    <p>Private suites, complimentary gourmet beverages, and ambient relaxing surroundings.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Personalized Consultation</h3>
+                    <p>Comprehensive skin and hair texture analysis prior to every custom service.</p>
+                </div>
+                <div class="card feature-card">
+                    <h3>Modern Techniques</h3>
+                    <p>State-of-the-art equipment and progressive styling methodologies for timeless elegance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">What We Offer</h3>
+                <h2>Our Exclusive Services</h2>
+            </div>
+            <div class="grid-3">
+                <!-- Card 1 -->
+                <div class="service-card" onclick="window.location.href='service-details.html?service=haircut'">
+                    <img src="images/hl.jpeg" alt="Haircut">
+                    <div class="service-card-body">
+                        <h3>Premium Haircut</h3>
+                        <p>Bespoke precision cutting, styling, and hair conditioning tailored to your features.</p>
+                        <a href="service-details.html?service=haircut" class="explore-btn" onclick="event.stopPropagation()">Explore Service</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card" onclick="window.location.href='service-details.html?service=spa'">
+                    <img src="images/Lh.jpeg" alt="Hair Spa">
+                    <div class="service-card-body">
+                        <h3>Luxury Hair Spa</h3>
+                        <p>Deep-nourishing scalp and hair therapy to restore vitality, shine, and moisture.</p>
+                        <a href="service-details.html?service=spa" class="explore-btn" onclick="event.stopPropagation()">Explore Service</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card" onclick="window.location.href='service-details.html?service=colour'">
+                    <img src="images/Ph.jpeg" alt="Hair Colour">
+                    <div class="service-card-body">
+                        <h3>Premium Hair Colour</h3>
+                        <p>Vibrant Balayage, Highlights, and root touch-ups using damage-free ammonia-free dyes.</p>
+                        <a href="service-details.html?service=colour" class="explore-btn" onclick="event.stopPropagation()">Explore Service</a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card" onclick="window.location.href='service-details.html?service=bridal'">
+                    <img src="images/Bm.jpeg" alt="Bridal Makeup">
+                    <div class="service-card-body">
+                        <h3>Luxury Bridal Makeup</h3>
+                        <p>HD Airbrush makeover package crafted to make your special day truly unforgettable.</p>
+                        <a href="service-details.html?service=bridal" class="explore-btn" onclick="event.stopPropagation()">Explore Service</a>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card" onclick="window.location.href='service-details.html?service=facial'">
+                    <img src="images/F.jpeg" alt="Facial">
+                    <div class="service-card-body">
+                        <h3>Luxury Facial</h3>
+                        <p>Radiance-boosting gold & caviar facials designed to rejuvenate and lift skin texture.</p>
+                        <a href="service-details.html?service=facial" class="explore-btn" onclick="event.stopPropagation()">Explore Service</a>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="service-card" onclick="window.location.href='service-details.html?service=nailart'">
+                    <img src="images/Na.jpeg" alt="Nail Art">
+                    <div class="service-card-body">
+                        <h3>Premium Nail Art</h3>
+                        <p>Artistic gel overlays, extensions, and custom intricate nail aesthetics.</p>
+                        <a href="service-details.html?service=nailart" class="explore-btn" onclick="event.stopPropagation()">Explore Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer Section -->
+    <section class="section offer-banner">
+        <div class="container text-center">
+            <h2>Special Festive Offer</h2>
+            <p class="offer-text">Get <span>20% OFF</span> on Hair Spa + Haircut Combo</p>
+            <a href="https://wa.me/919610025124?text=Hello%20I%20want%20to%20claim%20the%2020%25%20OFF%20Combo%20Offer" target="_blank" class="btn btn-gold">Claim Offer Now</a>
+        </div>
+    </section>
+
+    <!-- Before & After Section -->
+    <section class="section bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">Real Transformations</h3>
+                <h2>Before & After</h2>
+            </div>
+            <div class="grid-2">
+                <div class="card ba-card">
+                    <div class="ba-image-wrapper">
+                        <img src="images/B1.jpeg" class="lightbox-trigger" alt="Transformation 1">
+                    </div>
+                    <h4>Hair Makeover & Styling</h4>
+                </div>
+                <div class="card ba-card">
+                    <div class="ba-image-wrapper">
+                        <img src="images/Ph.jpeg" class="lightbox-trigger" alt="Transformation 2">
+                    </div>
+                    <h4>Radiance Skin Treatment</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">Meet Our Artists</h3>
+                <h2>Master Stylists</h2>
+            </div>
+            <div class="grid-3">
+                <div class="card team-card">
+                    <img src="images/T1.jpeg" alt="Stylist">
+                    <h3>Elena Rostova</h3>
+                    <p class="gold-text">Creative Director & Stylist</p>
+                </div>
+                <div class="card team-card">
+                    <img src="images/T2.jpeg" alt="Stylist">
+                    <h3>Sophia Chen</h3>
+                    <p class="gold-text">Senior Makeup Artist</p>
+                </div>
+                <div class="card team-card">
+                    <img src="images/T3.jpeg" alt="Stylist">
+                    <h3>Marcus Vance</h3>
+                    <p class="gold-text">Hair Master Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section bg-alt">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">Transparent Pricing</h3>
+                <h2>Service Menu</h2>
+            </div>
+            <div class="pricing-list">
+                <div class="price-item">
+                    <span>Haircut</span>
+                    <span class="dots"></span>
+                    <span class="gold-text">₹999</span>
+                </div>
+                <div class="price-item">
+                    <span>Hair Spa</span>
+                    <span class="dots"></span>
+                    <span class="gold-text">₹1499</span>
+                </div>
+                <div class="price-item">
+                    <span>Hair Colour</span>
+                    <span class="dots"></span>
+                    <span class="gold-text">₹2499</span>
+                </div>
+                <div class="price-item">
+                    <span>Bridal Makeup</span>
+                    <span class="dots"></span>
+                    <span class="gold-text">₹7999</span>
+                </div>
+                <div class="price-item">
+                    <span>Facial</span>
+                    <span class="dots"></span>
+                    <span class="gold-text">₹1299</span>
+                </div>
+                <div class="price-item">
+                    <span>Nail Art</span>
+                    <span class="dots"></span>
+                    <span class="gold-text">₹1799</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="sub-heading">Client Reviews</h3>
+                <h2>Words of Praise</h2>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card active">
+                    <img src="images/A.jpeg" alt="Client">
+                    <p>"The best salon experience I have had in India. Highly professional staff and incredible ambience!"</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Ananya Sharma</h4>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/R.jpeg" alt="Client">
+                    <p>"Got my bridal makeup done at Aura. Elena and her team made me look like royalty. Unmatched quality."</p>
+                    <div class="stars">★★★★★</div>
+                    <h4>Rohan Mehta</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section bg-alt">
+        <div class="container max-w-700">
+            <div class="section-title">
+                <h3 class="sub-heading">Got Questions?</h3>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Do I need an appointment beforehand? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>While walk-ins are welcome based on availability, we recommend booking appointments in advance to ensure instant service without wait times.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What brand products do you use? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>We exclusively use premium international brands such as L'Oréal Professionnel, Kérastase, Olaplex, and MAC Cosmetics.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Do you offer customized bridal packages? <span>+</span></div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer tailored pre-bridal and bridal makeover packages that include skin consultations, hair spas, trials, and draping.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="container grid-2">
+        <div class="contact-info">
+            <h3 class="sub-heading">Reach Out</h3>
+            <h2>Contact Us</h2>
+            <p>Phone: <a href="tel:12345678910" class="gold-text">12345678910</a></p>
+            <p>Email: <a href="mailto:ddimarketing1234@gmail.com" class="gold-text">ddimarketing1234@gmail.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/devanshugraphics_" target="_blank" class="gold-text">@devanshugraphics_</a></p>
+            <p>Location: <a href="https://maps.app.goo.gl/t9Jfi2r6AuqwN75YA?g_st=ac" target="_blank" class="gold-text">India</a></p>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.996123456789!2d77.2090!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjhCsDM2JzUwLjAiTiA3N8KwMTInMzIuNCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Dynamic WhatsApp Contact Form -->
+        <form class="contact-form card" id="whatsappForm">
+            <h3>Send a Message</h3>
+            <input type="text" id="custName" placeholder="Your Name" required>
+            <input type="email" id="custEmail" placeholder="Your Email" required>
+            <textarea id="custMsg" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-gold">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Aura Logo" onerror="this.onerror=null; this.src='https://via.placeholder.com/120x40/111/d4af37?text=AURA';">
+                <p>Luxury Beauty & Hair Studio</p>
+            </div>
+            <div class="footer-links">
+                <a href="#hero">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2026 Aura Luxury Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <a href="https://wa.me/919610025124?text=Hello%20I%20want%20to%20book%20a%20luxury%20salon%20appointment" target="_blank" class="floating-btn wa-float" aria-label="WhatsApp">
+        💬
+    </a>
+    <a href="tel:12345678910" class="floating-btn call-float" aria-label="Call Us">
+        📞
+    </a>
+
+    <!-- Sticky Mobile Book Button -->
+    <div class="mobile-sticky-book">
+        <a href="https://wa.me/919610025124?text=Hello%20I%20want%20to%20book%20a%20luxury%20salon%20appointment" target="_blank" class="btn btn-gold full-width">Book Luxury Appointment</a>
+    </div>
+
+    <!-- Lightbox Popup Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged Transformation Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
